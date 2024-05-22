@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Comaptible" content = "IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e9ac485376.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+        <div  class="container">
+            <nav>
+                <img src="images/LOGO3.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Electrical Engineer</p>
+                <h1>Hi, I'm <span> Shashank </span><br>Kumar From IIT Jodhpur</h1>
+            </div>
+        </div>
+</div>
+
+<!-------------------about--------------->
+
+<div id = "about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user3.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi, I am currently persuing B.Tech in Electrical Engineering at IIT Jodhpur and currently in my 4th year. I am very enthusiast about software development and looking for a role as a Software Developer Engineer.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id = "skills">
+                    <ul>
+                        <li><span>C/C++</span><br>Data Structures and Algorithms</li>
+                        <li><span>Python</span><br>Machine Learning</li>
+                        <li><span>SQL</span><br>Database Management Systems</li>
+                        <li><span>HTML | CSS | JavaScipt</span><br>Web Developemnet</li>
+                        <li><span>Django | React.js | Node.js | Express.js | Mongodb</span><br></li>
+                        <li><span>Verilog</span><br></li>
+                        <li><span>Lookers Studio</span><br></li>
+                        <li><span>Power BI</span><br></li>
+                        <li><span>Tableau</span><br></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>May 2023 - Jul 2023</span><br>Product Analyst Intern <br>Udaan.com</li>
+                        <li><span>May 2022 - Jul 2022</span><br>Machine Learning Intern <br>IIT Jodhpur</li>
+                        <li><span>CAD and Electronics Team</span><br>Robocon IIT Jodhpur</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020 - 2024</span><br>Electrical Engineering, IIT Jodhpur</li>
+                        <li><span>2019</span><br>Senior Secondary School <br> Children's Garden School, Bhabhua</li>
+                        <li><span>2017</span><br>High Secondary School <br> DAV Public School, Bikramganj</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------------- projects --------------->
+
+<div id = "Projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div>
+                <i class="fa-regular fa-heart"></i>
+                <h2>Heart Failure Prediction Model</h2>
+                <p>this model will predict the heart attack chances based on the available data.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-comments"></i>
+                <h2>Scrambler and Descrambler</h2>
+                <p>this is the scrambler project for scrambling the data for communication and security purpose.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-money-check-dollar"></i>
+                <h2>Cash Flow Minimizer System</h2>
+                <p>This system minimizes the number of transactions among multiple banks in the different corners of the world that use different modes of payment. There is one world bank (with all payment modes) to act as an intermediary between banks that have no common mode of payment.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------------------Contact--------------------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> kumar.shashank0209@iitj.ac.in</p>
+                <p><i class="fa-solid fa-phone"></i> +91 9939722422</p>
+                <div class ="social-icons">
+                    <a href="https://www.instagram.com/s_shashank09/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/shashank-kumar-03b998228/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/shashank0209"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/ShashankResume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text", name="Name", placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Thank you for visiting.</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxXpl_iIGIZfPsjGPijSBC2PxgYEhhZ6B9MpVrFrwzKud-iuK2pFXPcHnkE3V9LCw3YRA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
